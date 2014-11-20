@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <Button 
+        android:id="@+id/button_to_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click here to select image"
+        android:layout_alignParentBottom="true"/>
+    <ImageView 
+        android:id="@+id/imageview_to_show_modified_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/button_to_select"
+        android:background="@android:color/black"
+        />
+    
+</RelativeLayout>
